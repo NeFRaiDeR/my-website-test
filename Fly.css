@@ -1,0 +1,871 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #F4F6F5;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(font/Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url(font/Raleway-Medium.ttf) format('truetype');
+}
+
+.header{
+    display: flex;
+    justify-content: center; /* горизонтальное центрирование */
+    align-items: center; 
+    width: 100%;
+    height: 100px;
+    background: #E1EDE6;
+    gap: 497px;
+}
+
+.line{
+    position: absolute;
+}
+
+.logo{
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    font-family: 'Raleway-Bold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #598D66;
+    cursor: pointer;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: center; /* горизонтальное центрирование */
+    align-items: center; 
+    gap: 60px;
+}
+
+.header-menu a{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: #2C2D35;
+    transition: color 0.5s ease;
+}
+
+.svg-container {
+    display: inline-block;
+    color: #2C2D35; /* Исходный цвет */
+    transition: color 0.3s ease;
+    cursor: pointer; /* Курсор-указатель */
+}
+
+.house{
+    display: flex;
+    justify-content: center; /* горизонтальное центрирование */
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.house-text{
+    width: 540px;
+    height: 331px;
+}
+
+.house-text h2{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: #2C2D35;
+    margin-bottom: 20px;
+}
+
+.house-text span{
+    color: #598D66;
+    transition: fill 0.3s ease;
+}
+
+.house-text p{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #86928B;
+    margin-bottom: 60px;
+}
+
+.house-text button{
+    width: 225px;
+    height: 65px;
+    justify-content: center; /* горизонтальное центрирование */
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #598D66;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #598D66;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.center-catalog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.catalog-lang{
+    display: flex;
+}
+
+.catalog-lang h2{
+    margin-right: 427px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: #2C2D35;
+}
+
+.country-btn{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background: #D4E8D9;
+    height: 43px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #2C2D35;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.card {
+    padding: 20px 20px 30px 20px;
+    background: #E1EDE6;
+}
+
+.card div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #86928B;
+}
+
+.card h2{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2C2D35;
+    margin-bottom: 8px;
+}
+
+.card a{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2C2D35;
+}
+
+.card p{
+    margin-top: 30px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #598D66;
+    margin-bottom: 20px;
+}
+
+.card button{
+    width: 310px;
+    height: 65px;
+    background-color: transparent;
+    border: 1px solid #598D66;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #598D66;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info{
+    transform: scaleX(-1);
+    padding-top: 70px;
+    padding-right: 165px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent), url('img/Rectangle.jpg') 0% 26% / 100% no-repeat;
+    margin: 0 auto;
+    height: 574px;
+    margin-bottom: 70px;
+}
+
+.info_text{
+    transform: scaleX(-1);
+    height: 100%;
+}
+
+.info_text div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info_text h2{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F4F6F5;
+    width: 421px;
+    margin-left: 20px;
+}
+
+.info_text p{
+    width: 580px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+
+.info_text button{
+    width: 257px;
+    height: 65px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2C2D35;
+    gap: 6px;
+    background: #EEDB6D;
+    border: none;
+    cursor: pointer;
+}
+
+.company{
+    display: flex;
+    justify-content: center; /* Горизонтально */
+    gap: 30px;
+    margin: 0 auto;
+    width: 1110px;
+}
+
+.description{
+    width: 635px;
+    height: 272px;
+    margin-top: 124px;
+}
+
+.description h2{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: #2C2D35;
+    margin-bottom: 20px;
+}
+
+.description p{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #2C2D35;
+    margin-bottom: 20px;
+}
+
+.avatar{
+    display: flex;
+    gap: 30px;
+}
+
+.down{
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background: #E1EDE6;
+    margin-top: 70px;
+}
+
+.down_logo{
+    margin-right: 115px;
+}
+
+.call{
+    margin-top: 35px;
+}
+
+.call a{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: #2C2D35;
+}
+
+.call p{
+    margin-top: 8px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #86928B;
+    cursor: default;
+}
+
+.down_menu{
+    display: flex;
+    gap: 60px;
+    margin-right: 248px;
+    list-style-type: none;
+}
+
+.down_menu h2{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    cursor: default;
+}
+
+.down_menu ul{
+    list-style-type: none;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #86928B;
+}
+
+.down_menu li{
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.end p{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #86928B;
+}
+
+.header-menu a:hover{
+    color: #598D66;
+    border-bottom: 1px solid #598D66;
+}
+
+.header-menu a:active{
+    color: #376B44;
+    border: none;
+}
+
+.svg-container:hover svg {
+  filter: invert(48%) sepia(13%) saturate(1187%) hue-rotate(88deg) brightness(90%) contrast(87%);
+}
+
+.house-text button:hover{
+    background-color: #D4E8D9;
+}
+
+.house-text button:active{
+    background-color: #598D66;
+    color: #fff;
+}
+
+.country-btn:hover{
+    background: #598D66;
+    color: #F4F6F5;
+}
+
+.country-btn:active{
+    background: #376B44;
+    color: #F4F6F5;
+}
+.info_text button:hover{
+    background: #FAEB97;
+}
+
+.info_text button:active{
+    background: #D9B949;
+}
+.card button:hover{
+    background: #D4E8D9;
+}
+
+.card button:active{
+    background: #598D66;
+    color: #F4F6F5;
+}
+
+.info_text button:hover{
+    background: #FAEB97;
+}
+
+.info_text button:active{
+    background: #D9B949;
+}
+
+.test{
+        display: flex;
+    }
+
+@media (max-width: 1150px){
+    .header{
+        gap: 102px;
+    }
+
+    .house img{
+        width: 330px;
+        height: 380px;
+    }
+    
+    .house-text{
+        width: 330px;
+        height: 308px;
+    }
+    
+    .house-text h2{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .house button{
+        width: 210px;
+        height: 60px;
+    }
+
+    .catalog-lang h2{
+        margin-right: 63px;
+    }
+
+    .catalog{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 690px;
+    }
+
+    .info_text svg{
+        width: 60px;
+        height: 60px;
+    }
+
+    .info_text h2{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .info_text p{
+        width: 690px;
+        height: 182px;
+    }
+
+    .info_text button{
+        width: 210px;
+        height: 60px;
+    }
+
+    .company{
+        display: flex;
+        flex-direction: column;
+        width: 690px;
+    }
+    
+    .company img{
+        width: 510px;
+        height: 504px;
+    }
+    
+    .description{
+        margin-top: 40px;
+        width: 690px;
+        height: 281px;
+    }
+
+    .avatar img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .down{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .down_logo{
+        display: flex;
+        gap: 377px;
+        margin-right: 0px;
+    }
+
+    .call{
+        margin-top: 0;
+    }
+
+    .test{
+        margin-top: 30px;
+    }
+
+    .down_menu{
+        margin-right: 75px;
+    }
+}
+
+@media (max-width: 856px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        height: 123px;
+    }
+    
+    .line{
+        width: 540px;
+        border-top: #C3D1C6 solid 1px;
+    }
+
+    .svg-container{
+        margin-left: 64px;
+    }
+
+    .house{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .house img{
+        width: 195px;
+        height: 239px;
+    }
+
+    .house-text{
+        width: 285px;
+        height: 239px;
+    }
+
+    .house-text h2{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 36px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 10px;
+    }
+
+    .house-text p{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+        margin-bottom: 11px;
+    }
+
+    .house-text button{
+        width: 178px;
+        height: 50px;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .catalog-lang{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 510px;
+    }
+
+    .country{
+        display: flex;
+        gap: 32px;
+    }
+    .country-btn{
+        width: 118px;
+        height: 41px;
+        border-radius: 20px;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-left: 0;
+    }
+
+    .catalog {
+        max-width: 510px;
+        gap: 30px; /* Уменьшаем расстояние между карточками */
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        max-width: 240px;
+    }
+
+    .card img{
+        width: 200px;
+        height: 250px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card div{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .card h2{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 10px;
+    }
+
+    .card a{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .card p{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .card button{
+        width: 200px;
+        height: 50px;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .info{
+        padding-top: 50px;
+        padding-right: 33px;
+        height: 410px;
+        margin-bottom: 50px;
+    }
+
+    .info_text svg{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .info_text h2{
+        width: 261px;
+        height: 48px;
+        opacity: 1;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #F4F6F5;
+    }
+
+    .info_text p{
+        width: 510px;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+    .info_text button{
+        width: 190px;
+        height: 50px;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .company{
+        width: 510px;
+        height: 656px;
+    }
+
+    .company img{
+        width: 375px;
+        height: 370px;
+    }
+
+    .description{
+        margin-top: 0px;
+    }
+
+    .description h2{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 110.00000000000001%;
+        letter-spacing: 0%;
+
+    }
+
+    .description p{
+        width: 510px;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+    }
+
+    .avatar img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .down_logo{
+        gap: 197px;
+    }
+    .call p{
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .test{
+        display: block;
+    }
+
+    .down_menu{
+        display: flex;
+        gap: 100px;
+        margin-right: 0px;
+        list-style-type: none;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: #C3D1C6 solid 1px;
+    }
+
+    .network{
+        display: grid;
+        justify-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .end{
+        display: flex;
+        flex-direction: row;
+    }
+}

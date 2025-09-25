@@ -1,0 +1,50 @@
+<div class="catalog">
+        <div class="card">
+            <img src="img/card_1.png">
+            <div>Марсель Руссо</div>
+            <h2>Охота Амура</h2>
+            <a>Холст, масло (50х80)</a>
+            <p>14 500 руб</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card">
+            <img src="img/card_2.png">
+            <div>Анри Селин</div>
+            <h2>Дама с собачкой</h2>
+            <a>Акрил, бумага (50х80)</a>
+            <p>16 500 руб</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card">
+            <img src="img/card_3.png">
+            <div>Франсуа Дюпон</div>
+            <h2>Процедура</h2>
+            <a>Цветная литография (40х60)</a>
+            <p>20 000 руб</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card">
+            <img src="img/card_4.png">
+            <div>Луи Детуш</div>
+            <h2>Роза</h2>
+            <a>Бумага, акрил (50х80)</a>
+            <p>12 000 руб</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card">
+            <img src="img/card_5.png">
+            <div>Франсуа Дюпон</div>
+            <h2>Птичья трапеза</h2>
+            <a>Цветная литография (40х60)</a>
+            <p>22 500 руб</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card">
+            <img src="img/card_6.png">
+            <div>Пьер Моранж</div>
+            <h2>Пейзаж с рыбой</h2>
+            <a>Цветная литография (40х60)</a>
+            <p>20 000 руб</p>
+            <button>В корзину</button>
+        </div>
+    </div>
